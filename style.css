@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: url(Images/tile\ 15.jpg) no-repeat fixed;
+}
+
+/* header row - 3 (navigation bar) */
+.line1,
+.line2,
+.line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+
+.innovationDiv{
+    background-color: rgba(0,0,0,.5);
+}
+
+.innovationDiv img{
+    border-radius: 5px;
+}
+
+.navbar-nav li:hover{
+    color: #ccb094;
+    transition: all .2s;
+}
+
+.navbar{
+    transition: all .4s;
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.fixed-top {
+    box-shadow: 1px 1px 18px 1px white;
+    transition: all .4s;
+    animation: .4s ease-in slidedown;
+}
+
+.bannerDiv{
+    height: 700px;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url(Images/tile\ poster.jpg) center;
+}
+
+.footerDiv{
+    /* height: 320px; */
+    background-color: rgba(0,0,0,.5);
+}
+
+.customTextColor1{
+    color: #ffdcba;
+}
+
+.customTextColor2{
+    color: #ccb094;
+}
+
+.serviceCard{
+    width: 340px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 8px 20px #444;
+}
+
+.footerHr{
+    width: 100%;
+    height: 3px;
+    background-color: #ffdcba;
+    opacity: 1;
+}
+
+#input1{
+    color: black;
+}
+.input{
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all .8s;
+}
+
+.input:focus{
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: black;
+    border-bottom: 2px solid #ffdcba;
+}
+
+.submit-button{
+    background-color: #ccb094;
+    color: black;
+    transition: all .3s;
+}
+
+.submit-button:hover{
+    background: #ccb094;
+    transform: translateY(-3px);
+}
+
+.label{
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.input:placeholder-shown + .label{
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
