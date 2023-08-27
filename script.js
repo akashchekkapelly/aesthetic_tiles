@@ -16,21 +16,6 @@ $(document).ready(function(){
         $(this).addClass('active-item').siblings().removeClass('active-item');
     });
 
-    $('#twitterDiv').click(function() {
-        event.preventDefault(); // Prevents the default link behavior
-        window.open('https://twitter.com/lloyd_lymon?t=5ZptFXI3qIrr2nt9xrtjmw&s=09', '_blank');
-    });
-
-    $('#facebookDiv').click(function() {
-        event.preventDefault(); // Prevents the default link behavior
-        window.open('https://www.facebook.com/lloyd.lymon.3?mibextid=ZbWKwL', '_blank');
-    });
-
-    $('#youtubeDiv').click(function() {
-        event.preventDefault(); // Prevents the default link behavior
-        window.open('https://youtube.com/@TechRookies', '_blank');
-    });
-
     $('#homeBtn').click(function() {
         window.location.href = 'index.html';
     });
